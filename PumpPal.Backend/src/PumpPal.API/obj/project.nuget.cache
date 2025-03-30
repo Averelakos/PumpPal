@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "jPB6fYqV7ammGqS8jMtjR0u7Vd1111VJvnKnuuml3rRyNoTQsAEqKESlq7fwI8AgBPgd/Kpqryoz03Da0jsvig==",
+  "dgSpecHash": "9p3LR0l54LizQwT+xz7Y6M9qEY7jYtjJp0cMHlQuv3MD18h7VTF8IIPay3fVHfz/5JFLwJQc8hfypG2/OGu9AQ==",
   "success": true,
   "projectFilePath": "/home/iraklis/Projects/PumpPal/PumpPal.Backend/src/PumpPal.API/PumpPal.API.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/iraklis/.nuget/packages/microsoft.extensions.configuration.abstractions/9.0.3/microsoft.extensions.configuration.abstractions.9.0.3.nupkg.sha512",
+    "/home/iraklis/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.3/microsoft.extensions.dependencyinjection.abstractions.9.0.3.nupkg.sha512",
+    "/home/iraklis/.nuget/packages/microsoft.extensions.primitives/9.0.3/microsoft.extensions.primitives.9.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
