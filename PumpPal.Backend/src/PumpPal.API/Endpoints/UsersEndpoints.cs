@@ -1,7 +1,23 @@
-public class UsersEndpoints
+public partial class UsersEndpoints: EndpointBase
 {
-    public static void MapEndpoints(IEndpointRouteBuilder app)
+    protected override string BaseRoute => "/api/users";
+
+    protected override string Tag => "Users";
+
+    protected RouteGroupBuilder _groupBuilder;
+
+    public UsersEndpoints(RouteGroupBuilder routeGroupBuilder)
     {
-        app.MapGet("/users", () => "List of users");
+        _groupBuilder = CreateRouteGroup(routeGroupBuilder);
+    }
+
+    public override void MapEndpoints()
+    {
+        _groupBuilder.MapGet("/hello", Hello).WithName("HelloUsers");
+    }
+
+    private async Task<IResult> Hello()
+    {
+        return Results.Ok("Hello from UsersEndpoints!");
     }
 }

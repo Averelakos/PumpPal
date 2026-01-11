@@ -1,7 +1,12 @@
-public static class WebApplicationExtension{
-    
-    public static void AddEndpoints(this WebApplication app)
+public static class WebApplicationExtension
+{
+    public static void AddServices(this WebApplication webApplication)
     {
-        // app.UseMiddleware<CustomExceptionHandlerMiddleware>();
+        webApplication.Services.AddEndpoints();
+    }
+    
+    private static void AddEndpoints(this IServiceProvider serviceProvider)
+    {
+        serviceProvider.GetRequiredService<UsersEndpoints>().MapEndpoints();
     }
 }
